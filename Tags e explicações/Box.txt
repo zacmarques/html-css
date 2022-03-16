@@ -1,0 +1,11 @@
+1.	<!--height é altura, width é largura, border é borda, padding é alcochoamento/preenchimento(é oq fica entre letra e borda internamente), margin é o padding externo, outline é uma lina externa que fica dentro da margin entre borda e fim da margin. -->
+
+1-5.	<!--Dois tipos de caixa: box level e inline level. -->
+
+2.    	<!-- O box-level sempre se inicia uma linha nova e sempre ocupa em width 100% do viewport. É isolado e independente. A tag mais famosa é a div-->
+
+3.	<!--Tags de Box-Level: <div>, <h1-h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>. -->
+
+4.	<!-- O inline-level não quebra linha, não ocupa o width inteiro. Ele se inicia e termina no seu tamanho preciso(sem ocupar mais do que necessário), entre os elementos que você tinha. Tag mais famosa é span.-->
+
+5.	<!--Tags de Inline-Level: <span>, <a>, <code>, <small>, <strong>, <em>, <sup>, <sub>, <label>, <button>, <input>, <select>  -->

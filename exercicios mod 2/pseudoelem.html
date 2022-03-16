@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+            Seletores personalizados
+            #   = id -> só pode um por documento html, é o principal seletor
+            .   = class -> pode vários, segundo principal
+            :   = pseudo-class -> pseudo classes, são seletores de algumas coisas específicas da class
+            ::  = pseudo-element -> pseudo elemento são seletores de coisas específicas do pseudo-class
+            >   = children -> filho é a indicação que algo é filho de outra coisa, portanto, herda coisas 
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: chocolate;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: chocolate;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: crimson;
+        }
+        
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://youtube.com/tudoemvideo/" target="_blank">Canal do YT</a></li>
+        <li><a href="https://youtube.com/talbabouttudo/" target="_blank">Site do MamaEu</a></li>
+    </ul>
+
+    
+    
+</body>
+</html>

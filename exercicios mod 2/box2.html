@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-image: linear-gradient(-80deg, #412947 1%,#755778 30%,#E3AEF5);
+            background-attachment: fixed;
+            text-align: center;
+            width: 900px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 3px 3px 5px black;
+            margin: auto;
+        }
+        header { /*cabeçalho*/
+            background-color: #e6da5700;
+            weight: 600;
+            width: 300;
+            border: 10px solid #E6961C;
+            padding: 10px 20px 20px 20px;
+            margin: 20px auto 20px auto;
+            outline: 5px solid #412947;
+            border-radius: 10px;
+        }
+        header > h1{
+            color: #E6961C;
+        }
+        nav{
+            background-color: #412947;
+            weight: 600px;
+            width: 600px;
+            padding: 3px;
+            margin: auto;
+            border-radius: 6px;
+        }
+        nav > a{
+            text-align: center;
+            text-decoration: none;
+            color: #E6961C;
+            font-weight: bold;
+            margin-right: 20px;
+            box-shadow: 1px 1px 3px #00000073;
+        }
+        main{
+            background-color: #755778;
+            padding: 10px;
+            margin: auto;
+            text-align: justify;
+            text-decoration: none;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px ;
+        }
+        article{
+            background-color: #ffffff;
+            color: #000000;
+            text-align: justify;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+        h2{
+            color: #000000;
+            text-align: left;
+        }
+        p{
+            color: #000000;
+            text-align: justify;
+        }
+        article > aside{
+            background-color: #E6961C;
+            text-align: right;
+        }
+        footer{
+            color: #E3AEF5;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        footer > h3{
+            background-color: #000000;
+            font-weight: bold;
+            font-size: xx-large;
+            margin: 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        footer > div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: #d88322;
+            border-radius: 50%;
+        }
+        div#bola{
+            padding: 1px;
+            border:5px groove;
+            border-image-source: url('bordapng.png');
+            border-image-slice: 10;
+            border-image-repeat: stretch;
+            border-radius: 50%;
+        }
+        div#bola > p{
+            padding: 40px 0px 40px 20px;
+            color: #412947;
+            text-align: justify;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lakers Fan Site</h1>
+        <nav>
+            <a href="#">Notícias</a>
+            <a href="#">Time</a>
+            <a href="#">Contratações</a>
+            <a href="#">Projetos</a>
+            <a href="#">Rede Sociais</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis, voluptatem quae aspernatur at dolore itaque libero in officia exercitationem unde odit reprehenderit ratione eius hic. Molestiae saepe ipsam impedit!</p>
+                <aside><p>Artigo escrito por Dunha da Dunha</p></aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur culpa ut, perspiciatis, voluptates consectetur inventore ullam adipisci odio accusantium nostrum ratione neque voluptate distinctio incidunt ipsa esse facilis? Eveniet, minima.</p>
+                <aside>
+                    <p>Artigo escrito por Dunha da Dunha</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <h3>Desenvolvido pelo Curso em Vídeo.</h3>
+        <div id="bola">
+            <p>Meu Ovo!</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        mark{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito ou Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B(não semântica.<br>
+    Nessa frase, tenho um <strong>termo em destaque</strong> já que nessa frase ele é forte <br>
+    <h2>Itálico ou Ênfase</h2>
+    <p>Nessa frase, temos um <i>termo em itálico</i> usando a tag I(não semântica)</p>
+    <p>Nessa frase, temos um <em>termo em ênfase</em> usando a tag EM(semântica).</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar, também, <mark>um texto marcado</mark> com a tag MARK e a cor com CSS style background-color e cor.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <h2>Texto deletado e texto inserido</h2>
+    <p>Podemos marcar um <del>texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <p>Podemos marcar, também, <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+    <h2>Textos sobrescrito e subescrito</h2>
+    <p>Para inseir coisas do tipo x<sup>20</sup>+3</p>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+    <h1>Outras formatações</h1>
+    <h2>Código-Fonte e Pré-Formatação</h2>
+    <p>O comando <code>documento.getElementByID("teste")</code> é escrito em linguagem JavaScript</p>
+    <pre>
+        <code>
+num = int(input('Digite um Número'))
+if num % 2 == 0:
+    print(f'0 número {num} é PAR')
+else:
+    print(f'0 número {num} é IMPAR')
+print('Fim do Programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo:<q>o computador é um burro muito rápido</q> </p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Nobal, no seu livro html para leigos:</p>
+    <blockquote>A diferença do jumento com o jegue é que um é burro e outro é asno.</blockquote>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou gostando muito!</p>
+    <h2>Texto Invertido</h2>
+    <bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>
+
+</body>
+</html>

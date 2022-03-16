@@ -1,0 +1,42 @@
+	Aqui se encontram as tags aprendidas até o momento.
+
+1. <h1> ao <h6> -> hierarquia de títulos
+2. <p> -> parágrafo
+3. <hr> -> acrescenta uma linha horizontal após a tag anterior
+4. <br> -> pula a linha a partir do ponto(br é o ponto)
+5. <img> -> acrescenta imagem
+6. <link> -> adiciona link ao código, link algo; adiciona o link de algo específico
+7. <!----> -> adiciona comentários em uma linha, esses comentários só quem edita o arquivo vê
+8. &lt; e &gt; -> colocam menor que e maior que, respectivamente
+9. &algumacoisa -> colocam símbolos de acordo com a tág, exemplo: &reg; &copy;
+10. &#xalgumacoisa -> coloca emojis no código, de acordo com o serial do emoji(ver emojipedia.org)
+11. <html lang="pt-br"> -> lingua do arquivo
+12. <title> -> título da página
+13. <em> -> coloca a palavra ou frase em ênfase(itálico) com valor semântico
+14. <strong> -> coloca a palavra ou frase em destaque(negrito) com valor semântico
+15(CSS). <style> -> abre o css no código
+16(CSS). <background-color> -> escolhe a cor do background de um marcador(mark).
+17. <mark> -> coloca uma marcação na palavra ou frase, é o marca texto
+18. <del> -> coloca uma linha riscando a palavra ou frase, é a razura
+19. <ins> -> coloca o sublinhado na palavra ou frase.
+20. <sup> -> eleva a palavra ou frase (tipo x ao quadrado, o 2 fica pra cima)
+21. <sub> -> rebaixa a palavra ou frase(tipo h2O, o 2 é pra baixo)
+22. <code> -> deixa a palavra/frase no espaço exato, perfeito para códigos
+23. <pre> -> alinha as palavras/frases do jeito que está no código. Tudo vai ser considerado do jeito que tiver entre o pre
+24. <q> -> é literalmente o aspas(") mas com valor semântico.
+25. <blockquote/cite:> -> é uma citação deslocada, citação de 3 linhas ou mais da abnt. Se colocar com o cite, é possível colocar o link de onde tirou a citação
+26. <ol> -> cria uma lista ordenada, onde a ordem dos fatores importa
+27. <ul> -> cria uma lista não-ordenada, onde a ordem não importa
+28. <li> -> anuncia que aquilo que está entre a tag é o item da lista
+29. <dl> -> Definition List, abre lista de definição
+30. <dt> -> Definition Term, é o termo que vai ser descrito
+31. <dd> -> Definition description, é a descrição do termo definido
+32. <a> -> Âncora = referência a hipertexto, seria link. Olhar index10 caso dúvida
+33. <picture> -> a tag picture diz pro código que vai ter uma imagem ali, porém é possível editá-la com vários sources, diferente do img. Elemento pra imagem dinâmica
+34. <source> -> source são elementos dentro da picture q eu quero mudar ou acrescentar
+35. <audio> -> adiciona um audio. controls autoplay você disponibiliza o play
+36. <video> -> adiciona um video
+37. <*> -> configuração global das css(aula 13.06)
+38. <div> -> é uma box-level
+39. <span> -> É uma inline-box que significa expansão de código.
+40. <> ->

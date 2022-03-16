@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    font-family: 'Roboto Condensed', 'Kaushan Script' sans-serif;
+    /*
+    !Medidas Absolutas
+    <cm, mm, in, px, pt(n recomenda usar em tela), pc(não recomenda usar em tela)> 
+
+    !Medidas Relativas
+    em, ex, rem, vw(viewport), vh, %. 
+    Geralmente 16px = 1em
+    !Recomendações: usar em e px.
+    */
+    
+}
+
+body {
+    font-family: 'Roboto Condensed' 70px, sans-serif;
+    font-size: 18px;
+    font-weight: bold; /*contêm o peso da fonte: lighter, normal, bold e bolder -> bolder = extranegrito, lighter = super fraco, normal é normal e bold é negrito*/
+    font-style: italic;
+    background-image: linear-gradient(-80deg, #412947 1%,#755778 30%,#E3AEF5);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #412947;
+    width: 1080px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+h1 {
+    font: italic bold 3em 'Kaushan Script', sans-serif;
+    color: #667857;
+    text-shadow: 10px 10px 16px #c1fd91;
+    text-align: center;
+    /*
+    Shorthand(macetinho/atalho)
+    font: style, weight, size, family; 
+    -> coloca font e escreve cada um dos elementos, isso deixa tudo numa mesma linha de código, porém tem q ser nessa ordem específica 
+    -> font-style, font-weight, font-size, font-family
+    */
+}
+
+h2 {
+    font: bold 2em 'Roboto Condensed', sans-serif;
+    color: #92C468;
+    text-align: justify;
+    text-shadow: 8px 8px 10px #ffffff;
+}
+
+p {
+    font: normal 1em 'Times New Roman', Times, serif;
+    text-align: justify; 
+    
+}

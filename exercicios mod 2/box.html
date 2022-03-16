@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="box.css">
+    <!--Olhar aulas do capítulo 16 inteiro.-->
+    <!-- 
+        Shorthand de Border: 
+        *border: width, style, color -> border: 10px normal black;
+        
+        Shorthand de Padding: 
+        *padding: top, right, bottom, left(sentido horário) -> padding: 10px(top) 10px (right) 10px (bottom) 10px(left)
+        
+        Shorthand de Margin: 
+        *margin: top, right, bottom, left(sentido horário)-> margin: 20px 20px 40px auto;
+        
+        Shorthand de Outline: 
+        *outline: width, style, color -> border: 10px normal black;
+    -->
+    
+</head>
+    <!--height é altura, width é largura, border é borda, padding é alcochoamento/preenchimento(é oq fica entre letra e borda internamente), margin é o padding externo, outline é uma lina externa que fica dentro da margin entre borda e fim da margin. -->
+
+    <!--Dois tipos de caixa: box level e inline level. -->
+
+    <!-- O box-level sempre se inicia uma linha nova e sempre ocupa em width 100% do viewport. É isolado e independente. A tag mais famosa é a div-->
+
+    <!--Tags de Box-Level: <div>, <h1-h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>. -->
+
+    <!-- O inline-level não quebra linha, não ocupa o width inteiro. Ele se inicia e termina no seu tamanho preciso(sem ocupar mais do que necessário), entre os elementos que você tinha. Tag mais famosa é span.-->
+
+    <!--Tags de Inline-Level: <span>, <a>, <code>, <small>, <strong>, <em>, <sup>, <sub>, <label>, <button>, <input>, <select>  -->
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona. </p>
+
+</body>
+</html>

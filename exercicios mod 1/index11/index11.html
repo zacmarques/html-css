@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body style="background-color: grey;">
+    <h1>Elemento picture</h1>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes.</p>
+    <picture> <!--a tag picture é código avisando que vai aparecer uma imagem, porém é possível colocar sources nela--> 
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png"> <!--detalhe do source, precisa começar com a imagem maior de base(a img) e ir subindo os sources em ordem decrescente. O menor mais em cima, pra ter a maior prioridade-->
+        <source media="(max-width:1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="imagem flexível">
+    </picture>
+    <h2>Programando áudios!</h2>
+    <p>Agora vamos colocar áudios no site e ver como funciona!</p>
+    <audio src="pontiff.mp3" controls autoplay></audio> <!--Formatos possíveis mp3, wav e ogg, nem todos navegadores aceitam tudo-->
+    <audio preload="metadata" controls loop>
+        <source src="cindersoul.mp3" type="audio/mpeg">
+        <source src="cindersoul.ogg" type="audio/ogg">
+        <source src="cindersoul.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="cindersoul.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <h2>Vídeos hospedados no site</h2>
+    <p>Agora, vamos dar procedimento e acrescentar um vídeo ao site. </p>
+    <video preload="metadata" width="720" controls>
+        <source src="nameless.mp4" type="video/mp4">
+    </video>
+    <h2>Vídeos não-hospedados no site</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=1Nnx3vZOfsA&ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
