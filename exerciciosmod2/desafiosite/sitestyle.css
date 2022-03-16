@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
 *{
     font-family: 'Fredoka', sans-serif;
-    min-width: 220px;
+    min-width: 120px;
     max-width: 2000px;
     /*
     !Medidas Absolutas
@@ -31,13 +31,15 @@ body {
     background-image: linear-gradient(80deg, var(--cor3),var(--cor2),var(--cor1), var(--cor0));
     background-attachment: fixed;
     text-align: center;
-    width: auto;
+    min-width: 466px;
     height: auto;
     padding: 2px;
     border-radius: 10px;
 }
 
 header { /*cabeçalho*/
+    max-width: 1200px;
+    min-width: 466px;
     padding: 10px auto 20px auto;
     border-radius: 10px;
     margin: 5px auto 0px auto;
