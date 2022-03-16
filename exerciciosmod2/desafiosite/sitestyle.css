@@ -104,8 +104,8 @@ nav > a:hover{
 main {
     min-width: 220px;
     max-width: 1200px;
-    padding-right: 100px ;
-    padding-left: 100px;
+    padding-right: 5px ;
+    padding-left: 5px;
     background-color: var(--cor5);
     text-align: justify;
     text-decoration: none;
@@ -154,7 +154,7 @@ div#left{
     font-weight: bold ;
     color: black;
     padding: 5px 20px 5px 5px;
-    margin: 30px 10px 550px 5px;
+    margin: 30px 10px 20px 5px;
     border-radius: 10px;
 }
 div#left > p{
