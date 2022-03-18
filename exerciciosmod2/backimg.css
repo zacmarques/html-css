@@ -1,0 +1,35 @@
+@charset "UTF-08";
+
+body{
+    height: 3000px;
+    background-image: url('backgroundimg/fourpatternhq.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x, repeat-y, no-repeat; 
+    /* Background size é o tamanho dele, position é onde ele vai se posicionar e o repeat é mandar o background se repetir nos eixos X e Y ou não se repetir no NO-REPEAT */
+}
+div.quadrado{
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    width: 400px;
+    height: 400px;
+}
+
+div#q1{
+    background-color: rgb(105, 187, 160);
+
+}
+
+div#q2{
+    background-image: linear-gradient( to top right, lightgreen, lightblue);
+
+}
+
+div#q3{
+    height: 400px;
+    max-width: 400px;
+    background-image: url('backgroundimg/patternmg.jpg');
+
+}
