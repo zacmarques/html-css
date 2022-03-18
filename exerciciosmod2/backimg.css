@@ -31,5 +31,7 @@ div#q3{
     height: 400px;
     max-width: 400px;
     background-image: url('backgroundimg/patternmg.jpg');
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
