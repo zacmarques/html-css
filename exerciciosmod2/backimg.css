@@ -1,37 +1,38 @@
 @charset "UTF-08";
 
 body{
-    height: 3000px;
-    background-image: url('backgroundimg/fourpatternhq.jpg');
+    height: 100vh;
+    /* Background size é o tamanho dele, position é onde ele vai se posicionar e o repeat é mandar o background se repetir nos eixos X e Y ou não se repetir no NO-REPEAT */ 
+    /*Tem shorthand pra background -> background: color -> image -> position -> repeat -> size(Na documentação diz que o size entra na shorthand nessa ordem, porém na prática não funciona e precisa declarar ele sozinho. Explicação: provavelmente em algum momento vão ser atualizados os navegadores e essa regra vai começar a valer, até lá tem que declarar ele solo) -> attachment;*/
+    background: orange url("backgroundimg/fourpatternhq.jpg") center center no-repeat fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: repeat-x, repeat-y, no-repeat; 
-    /* Background size é o tamanho dele, position é onde ele vai se posicionar e o repeat é mandar o background se repetir nos eixos X e Y ou não se repetir no NO-REPEAT */
+}
+main{
+    max-width: 2000px;
 }
 div.quadrado{
+    background-image:url('backgroundimg/fourpatternhq.jpg');
     display: inline-block;
     border: 3px solid black;
     border-radius: 10px;
     background-color: lightgrey;
-    width: 400px;
+    min-width: 400px;
     height: 400px;
 }
 
 div#q1{
-    background-color: rgb(105, 187, 160);
-
+    background-position: left top;
 }
 
 div#q2{
-    background-image: linear-gradient( to top right, lightgreen, lightblue);
+    background-position: right top;
 
 }
 
 div#q3{
-    height: 400px;
-    max-width: 400px;
-    background-image: url('backgroundimg/patternmg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+div#q4{
+    background-position: center center;
 }
