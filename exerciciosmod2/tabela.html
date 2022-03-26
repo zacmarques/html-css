@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .t1{
+            width: 200px;
+            height: 400px;
+            
+        }
+        .t2{
+
+        }
+        .thead{
+            background-color: lightgray;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            vertical-align: top;
+        }
+        tr{
+            background-color: lightgray;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+        td{
+            background-color: white;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    Hierarquia de Tabelas (simples)
+    Table = Tabela
+    Table Row = Linha da Tabela
+    Table Header = Cabeçalho da Tabela
+    Table Data = Dado da tabela
+    -->
+    <table class="t1"> <!--Tag tabela-->
+        <tr> <!-- Primeira Linha/ Table Row-->
+            <td>A1</td> <!-- Conteúdo da tabela / Table Data-->
+            <td>B1</td> <!-- Conteúdo da tabela / Table Data-->
+            <td>C1</td>
+        </tr>
+        <tr> <!-- Segunda Linha / Table Row-->
+            <td>A2</td> <!-- Conteúdo da tabela / Table Data-->
+            <td>B2</td> <!-- Conteúdo da tabela / Table Data-->
+            <td>C2</td>
+        </tr>
+    </table>
+    <h1>Usando tabelas grandes</h1>
+    <!--
+        Anatomia pra tabelas grandes:
+            Table
+                Thead
+                    TR, TD, TH
+                Tbody
+                    TR, TD, TH
+                Tfoot
+                    TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <td class="thead">Posição</td>
+                <td class="thead">Estado</td>
+                <td class="thead">População</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+</html>
