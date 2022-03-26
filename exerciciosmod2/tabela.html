@@ -8,31 +8,76 @@
     <style>
         body{
 
+            height: 110%;
+            margin: 10px;
+            padding: 10px;
+            background-color: yellowgreen; 
         }
         table{
             border-collapse: collapse;
         }
+        .tb3{
+            padding: 20px;
+            height: 200px;
+            width: 600px;
+            vertical-align: auto;
+        }
+        .tb3 > tr > th{
+            background-color: gray;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+        .tb4{
+            padding: 20px;
+            height: 300px;
+            width: 500px;
+            vertical-align: auto;
+        }
+        .tb5{
+            padding: 20px;
+            height: 500px;
+            width: 500px;
+            vertical-align: auto; 
+        }
         .t1{
             width: 200px;
             height: 400px;
-            
         }
-        .t2{
-
+        .lightbluec{
+            background-color: lightblue;
         }
-        .thead{
-            background-color: lightgray;
+        .greenc{
+            background-color: green;
+        }
+        .orangec{
+            background-color: orange;
+        }
+        caption{
+            background-color: lightgrey;
+            color: black;
+            padding: 10px;
+            border: 1px solid black
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+            border: 2px solid black;
+            padding: 30px;
+            text-align: center;
+            vertical-align: top;
+        }
+        thead > tr > th{
             border: 2px solid black;
             padding: 20px;
-            text-align: center;
-            vertical-align: top;
+            position:sticky;
+            top:0;
+            background-color: grey;
         }
-        tr{
-            background-color: lightgray;
-            border: 2px solid black;
-            padding: 10px;
-            text-align: center;
-            vertical-align: top;
+         tbody > tr > th {
+             color: white;
+            background-color: grey;
+            border: 2px  solid black;
         }
         td{
             background-color: white;
@@ -41,12 +86,15 @@
             text-align: center;
             vertical-align: top;
         }
+        /*Por fim, temos um macete para responsividade de tabelas:
+        Envolopar a tabela numa div e atribuir -> overflow: <- para a div possibilita o conteúdo não ficar vazando e não ficar horrível esteticamente*/
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
     <!--
     Hierarquia de Tabelas (simples)
+    Caption = é o título da tabela no geral
     Table = Tabela
     Table Row = Linha da Tabela
     Table Header = Cabeçalho da Tabela
@@ -69,28 +117,372 @@
         Anatomia pra tabelas grandes:
             Table
                 Thead
-                    TR, TD, TH
+                    TR, TH, TD
                 Tbody
-                    TR, TD, TH
+                    TR, TH, TD
                 Tfoot
-                    TR, TD, TH
+                    TR, TH, TD
+        Scope -> escopo:
+        O escopo é necessário para informar aos buscadores(google, por exemplo) o que seria tal item da tabela de forma coerente e com sentido. Tem valor semântico e valor de pesquisa, mas nenhum valor visual.
+
+        Scope: col -> coluna à partir de um TH - > avisa que os dados são apresentados de forma vertical
+        Scope: row -> linha à partir do TH -> avisa que os dados são apresentados de forma horizontal
     -->
     <table>
+        <caption><strong>População das Unidades Federativas</strong></caption>
         <thead>
-            <tr>
-                <td class="thead">Posição</td>
-                <td class="thead">Estado</td>
-                <td class="thead">População</td>
+            <tr scope>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
                 <td>São Paulo</td>
                 <td>45.919.049</td>
             </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>
+            <tr class="trb">
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr class="trb">
+                <td>Rio de Janeiro</td>
+                <td>39.926.231</td>
+            </tr>
+            <tr class="trb">
+                <td>Minas Gerais</td>
+                <td>80.840.031</td>
+            </tr>
+            <tr class="trb">
+                <td>Brasília</td>
+                <td>19.088.045</td>
+            </tr>            
         </tbody>
         <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes:</th>
+                <th>000000</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Criação de Colspan e rowspan - Teste 1</h1>
+    <table class="tb3">
+        <caption>Mesclagem de Células</caption>
+        <tr> 
+            <td>A1</td> 
+            <td>B2</td> <!--Número do colspan é o número de colunas que ocupa-->
+            <td rowspan="2">C3</td>
+            <td>D4</td>
+        </tr>
+        <tr> 
+            <td>A5</td>
+            <td>B6</td>
+            <td>D7</td>
+        </tr>
+        <tr> 
+            <td colspan="3">A8</td>
+            <td>D9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">A10</td>
+            <td colspan="2">B11</td>
+            <td>D12</td>
+        </tr>
+        <tr>
+            <td>B13</td>
+            <td>C14</td>
+            <td>D15</td>
+        </tr>
+    </table>
+    <h1>Criação de Tabela Completa - Teste 2</h1>
+    <table class="tb4">
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr> 
+                <th scope="col">Grupo</th> 
+                <th scope="col">Nomes</th> 
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr> 
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total de Habitantes:</th>
+                <th style="border: 2px solid black;">000000</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Colgroup - Teste 3</h1>
+    <table>
+        <colgroup> <!-- Seleciona o grupo de colunas. Cada col é uma coluna. Não está funcionando aqui por causa da estilização feita anteriormente para as outras, será otimizado em outro momento.o -->
+            <col class="lightbluec" span="2">
+            <col class="greenc">
+            <col class="orangec">
+        </colgroup>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr> 
+                <th scope="col">Grupo</th> 
+                <th scope="col">Nomes</th> 
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr> 
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total de Habitantes:</th>
+                <th style="border: 2px solid black;">000000</th>
+            </tr>
         </tfoot>
     </table>
 </body>
