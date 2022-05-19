@@ -141,14 +141,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     font-size: 1.5vw;
     color: #ffffff;
     background-color: #D6000D;
     border-radius: 15px;
     width: 20vw;
-    height: 8vh;
-    justify-content: space-around;
+    height: 6vh;
+    padding-top: 10px ;
 }
 #smain3{
     display: flex;
@@ -431,13 +431,12 @@ a:active {
     color: black;
     text-decoration: underline;
 }
-#a2:link {
+#a2 {
     color: #ffffff;
-    text-decoration: none;
 }
   
 #a2:visited {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
   
@@ -447,6 +446,6 @@ a:active {
 }
   
 #a2:active {
-    color: white;
+    color: black;
     text-decoration: underline;
 }
